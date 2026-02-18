@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Коралл | Каталог товаров</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="assets/js/main.js" defer></script>
+    <meta name="description"
+        content="Коралл | Широкий выбор товаров для освещения и оформления окон. Представляем качественную продукцию из России, Китая, Германии, Австрии, Турции.">
+    <meta name="keywords"
+        content="Коралл | Широкий выбор товаров для освещения и оформления окон. Представляем качественную продукцию из России, Китая, Германии, Австрии, Турции.">
+    <link rel="shortcut icon" href="assets/images/header/logo.svg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="header-up">
+            <div class="header-up-left">
+                <div class="header-locations">
+                    <div class="header-locations-btn">
+                        <img src="assets/images/header/direct-right.svg" alt="arrow">
+                        <a href="#">Казань</a>
+                    </div>
+                    <div class="header-locations-content">
+                        <a href="#">Казань</a>
+                        <a href="#">Казань</a>
+                        <a href="#">Казань</a>
+                        <a href="#">Казань</a>
+                    </div>
+                </div>
+
+                <nav class="header-nav-up header-nav-up-desktop">
+                    <a href="#">о компании</a>
+                    <a href="#">наши магазины</a>
+                    <a href="#">отзывы</a>
+                    <a href="#">сотрудничество</a>
+                    <a href="#">новости</a>
+                </nav>
+            </div>
+            <div class="header-up-right">
+                <div class="header-link">
+                    <a href="tel:+" class="header-link-title">8 843 204-19-70</a>
+                    <p class="header-link-desc">розница</p>
+                </div>
+                <div class="header-link">
+                    <a href="tel:+" class="header-link-title">8 843 274-23-68</a>
+                    <p class="header-link-desc">опт</p>
+                </div>
+            </div>
+        </div>
+        <div class="header-down">
+            <div class="header-down-left">
+                <a href="index.html"> <img src="assets/images/header/logo.svg" alt="logo" class="logo"></a>
+                  <a href="categ_catalog.html" class="header-btn">
+                    <img src="assets/images/header/menu.svg" alt="menu">
+                    <p>Каталог</p>
+                </a>
+                <div class="h-btn-search h-btn-search-desktop">
+                    <input type="text" placeholder="Поиск товара" maxlength="100">
+                    <button>Найти</button>
+                </div>
+                <nav class="header-nav-down header-nav-down-desktop">
+                    <a href="#">Жалюзи</a>
+                    <a href="#">Карнизы</a>
+                    <a href="#">Аксессуары для штор</a>
+                </nav>
+            </div>
+            <div class="header-down-right header-down-right-desktop">
+                <a href="cart.html"><img src="assets/images/header/bag-happy.svg" alt="cart"></a>
+                <a href="#"><img src="assets/images/header/Heart.svg" alt="heart"></a>
+                <a href="#" class="user_icon"><img src="assets/images/header/User.svg" alt="user"></a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <button class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="mobile-menu">
+        <div class="mobile-menu-inner">
+
+            <nav class="header-nav-up header-nav-up-mobile">
+                <a href="#">о компании</a>
+                <a href="#">наши магазины</a>
+                <a href="#">отзывы</a>
+                <a href="#">сотрудничество</a>
+                <a href="#">новости</a>
+            </nav>
+            <div class="h-btn-search">
+                <input type="text" placeholder="Поиск товара" maxlength="100">
+                <button>Найти</button>
+            </div>
+            <nav class="header-nav-down">
+                <a href="#">Жалюзи</a>
+                <a href="#">Карнизы</a>
+                <a href="#">Аксессуары для штор</a>
+            </nav>
+            <div class="header-down-right">
+                <a href="#"><img src="assets/images/header/bag-happy.svg" alt="cart"></a>
+                <a href="#"><img src="assets/images/header/Heart.svg" alt="heart"></a>
+                <a href="#" class="user_icon"><img src="assets/images/header/User.svg" alt="user"></a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="breadcrumbs">
+        <div class="container"><a href="index.html" class="breadcrumb">главная</a>
+            <p>•</p>
+            <a href="categ_catalog.html" class="breadcrumb">каталог</a>
+            <p>•</p>
+            <a href="cart_products.html" class="breadcrumb">жалюзи и шторы</a>
+        </div>
+    </div>
+
+    <div class="cart-products">
+        <div class="container">
+            <h2 class="Unbounded">Жалюзи и шторы</h2>
+            <div class="cart-products-content-box">
+                <div class="filter-buttons-mobile">
+                    <button class="filter-btn" id="openCatFilter">
+                        <span>Категории</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <button class="filter-btn" id="openOptionsFilter">
+                        <span>Характеристики</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Затемняющий фон -->
+                <div class="filter-overlay" id="filterOverlay"></div>
+
+                <!-- СТВОРКА 1: Категории (слева) -->
+                <div class="filter-drawer filter-drawer-left" id="catFilterDrawer">
+                    <div class="filter-drawer-header">
+                        <h3>Категории</h3>
+                        <button class="filter-drawer-close" id="closeCatFilter">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15 5L5 15M5 5L15 15" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="filter-drawer-content">
+                        <!-- Категории -->
+                        <div class="cat-tab-box">
+                            <div class="cat-tab active">Все</div>
+                            <div class="cat-tab">Жалюзи металл серебро</div>
+                            <div class="cat-tab">Жалюзи металл белый</div>
+                            <div class="cat-tab">Жалюзи металл слоновая кость</div>
+                            <div class="cat-tab">Жалюзи металл черный</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- СТВОРКА 2: Характеристики (справа) -->
+                <div class="filter-drawer filter-drawer-right" id="optionsFilterDrawer">
+                    <div class="filter-drawer-header">
+                        <h3>Характеристики</h3>
+                        <button class="filter-drawer-close" id="closeOptionsFilter">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15 5L5 15M5 5L15 15" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="filter-drawer-content">
+                        <!-- Характеристики (копия формы) -->
+                       <form class="cart-products-form">
+                            <!-- Цена (всегда видна) -->
+                            <div class="cart-products-left-gap">
+                                <p class="cart-products-left-title">Цена</p>
+                                <div class="cart-products-inputs">
+                                    <input type="text" placeholder="от 350" maxlength="10">
+                                    <input type="text" placeholder="до 1426" maxlength="10">
+                                </div>
+                            </div>
+
+                            <!-- Цвет с collapse функционалом -->
+                            <div class="cart-products-left-gap collapse-container">
+                                <p class="cart-products-left-title">Цвет</p>
+                                <div class="input-radio-gap collapse-content">
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="metal-type" id="white-gold" value="white-gold">
+                                        <label for="white-gold">белое золото</label>
+                                    </div>
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="metal-type" id="white" value="white">
+                                        <label for="white">белый</label>
+                                    </div>
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="metal-type" id="buc" value="buc">
+                                        <label for="buc">бук</label>
+                                    </div>
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="metal-type" id="vanil-zoloto" value="vanil-zoloto">
+                                        <label for="vanil-zoloto">ваниль-золото</label>
+                                    </div>
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="metal-type" id="venge" value="venge">
+                                        <label for="venge">венге</label>
+                                    </div>
+                                    <!-- Добавьте еще опций для примера -->
+                                    <div class="input-radio-box hidden-option">
+                                        <input type="radio" name="metal-type" id="oak" value="oak">
+                                        <label for="oak">дуб</label>
+                                    </div>
+                                    <div class="input-radio-box hidden-option">
+                                        <input type="radio" name="metal-type" id="walnut" value="walnut">
+                                        <label for="walnut">орех</label>
+                                    </div>
+                                    <div class="input-radio-box hidden-option">
+                                        <input type="radio" name="metal-type" id="cherry" value="cherry">
+                                        <label for="cherry">вишня</label>
+                                    </div>
+                                    <div class="input-radio-box hidden-option">
+                                        <input type="radio" name="metal-type" id="pine" value="pine">
+                                        <label for="pine">сосна</label>
+                                    </div>
+                                </div>
+                                <button type="button" class="input-radio-a" data-expanded="false">показать все</button>
+                            </div>
+
+                            <!-- Вид трубы (меньше 5 опций - без кнопки) -->
+                            <div class="cart-products-left-gap collapse-container">
+                                <p class="cart-products-left-title">Вид трубы</p>
+                                <div class="input-radio-gap collapse-content">
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="diameter" id="16mm" value="16mm">
+                                        <label for="16mm">Ø16мм</label>
+                                    </div>
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="diameter" id="19mm" value="19mm">
+                                        <label for="19mm">Ø19мм</label>
+                                    </div>
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="diameter" id="25mm" value="25mm">
+                                        <label for="25mm">Ø25мм</label>
+                                    </div>
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="diameter" id="28mm" value="28mm">
+                                        <label for="28mm">Ø28мм</label>
+                                    </div>
+
+                                </div>
+                                <button type="button" class=" input-radio-a" data-expanded="false">показать все</button>
+
+                            </div>
+
+                            <!-- Диаметр (с collapse) -->
+                            <div class="cart-products-left-gap collapse-container">
+                                <p class="cart-products-left-title">Диаметр</p>
+                                <div class="input-radio-gap collapse-content">
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="type-of-pipe" id="vitaya" value="vitaya">
+                                        <label for="vitaya">витая</label>
+                                    </div>
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="type-of-pipe" id="gladkaya" value="gladkaya">
+                                        <label for="gladkaya">гладкая</label>
+                                    </div>
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="type-of-pipe" id="profilnaya" value="profilnaya">
+                                        <label for="profilnaya">профильная</label>
+                                    </div>
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="type-of-pipe" id="riflenaya" value="riflenaya">
+                                        <label for="riflenaya">рифленая</label>
+                                    </div>
+                                    <!-- Добавьте еще опций -->
+                                    <div class="input-radio-box hidden-option">
+                                        <input type="radio" name="type-of-pipe" id="kombinirovannaya"
+                                            value="kombinirovannaya">
+                                        <label for="kombinirovannaya">комбинированная</label>
+                                    </div>
+                                    <div class="input-radio-box hidden-option">
+                                        <input type="radio" name="type-of-pipe" id="spiralnaya" value="spiralnaya">
+                                        <label for="spiralnaya">спиральная</label>
+                                    </div>
+                                </div>
+                                <button type="button" class=" input-radio-a" data-expanded="false">показать все</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="cart-products-content">
+                    <div class="cart-products-left desktop-only">
+                        <form class="cart-products-form">
+                            <!-- Цена (всегда видна) -->
+                            <div class="cart-products-left-gap">
+                                <p class="cart-products-left-title">Цена</p>
+                                <div class="cart-products-inputs">
+                                    <input type="text" placeholder="от 350" maxlength="10">
+                                    <input type="text" placeholder="до 1426" maxlength="10">
+                                </div>
+                            </div>
+
+                            <!-- Цвет с collapse функционалом -->
+                            <div class="cart-products-left-gap collapse-container">
+                                <p class="cart-products-left-title">Цвет</p>
+                                <div class="input-radio-gap collapse-content">
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="metal-type" id="white-gold" value="white-gold">
+                                        <label for="white-gold">белое золото</label>
+                                    </div>
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="metal-type" id="white" value="white">
+                                        <label for="white">белый</label>
+                                    </div>
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="metal-type" id="buc" value="buc">
+                                        <label for="buc">бук</label>
+                                    </div>
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="metal-type" id="vanil-zoloto" value="vanil-zoloto">
+                                        <label for="vanil-zoloto">ваниль-золото</label>
+                                    </div>
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="metal-type" id="venge" value="venge">
+                                        <label for="venge">венге</label>
+                                    </div>
+                                    <!-- Добавьте еще опций для примера -->
+                                    <div class="input-radio-box hidden-option">
+                                        <input type="radio" name="metal-type" id="oak" value="oak">
+                                        <label for="oak">дуб</label>
+                                    </div>
+                                    <div class="input-radio-box hidden-option">
+                                        <input type="radio" name="metal-type" id="walnut" value="walnut">
+                                        <label for="walnut">орех</label>
+                                    </div>
+                                    <div class="input-radio-box hidden-option">
+                                        <input type="radio" name="metal-type" id="cherry" value="cherry">
+                                        <label for="cherry">вишня</label>
+                                    </div>
+                                    <div class="input-radio-box hidden-option">
+                                        <input type="radio" name="metal-type" id="pine" value="pine">
+                                        <label for="pine">сосна</label>
+                                    </div>
+                                </div>
+                                <button type="button" class="input-radio-a" data-expanded="false">показать все</button>
+                            </div>
+
+                            <!-- Вид трубы (меньше 5 опций - без кнопки) -->
+                            <div class="cart-products-left-gap collapse-container">
+                                <p class="cart-products-left-title">Вид трубы</p>
+                                <div class="input-radio-gap collapse-content">
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="diameter" id="16mm" value="16mm">
+                                        <label for="16mm">Ø16мм</label>
+                                    </div>
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="diameter" id="19mm" value="19mm">
+                                        <label for="19mm">Ø19мм</label>
+                                    </div>
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="diameter" id="25mm" value="25mm">
+                                        <label for="25mm">Ø25мм</label>
+                                    </div>
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="diameter" id="28mm" value="28mm">
+                                        <label for="28mm">Ø28мм</label>
+                                    </div>
+
+                                </div>
+                                <button type="button" class=" input-radio-a" data-expanded="false">показать все</button>
+
+                            </div>
+
+                            <!-- Диаметр (с collapse) -->
+                            <div class="cart-products-left-gap collapse-container">
+                                <p class="cart-products-left-title">Диаметр</p>
+                                <div class="input-radio-gap collapse-content">
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="type-of-pipe" id="vitaya" value="vitaya">
+                                        <label for="vitaya">витая</label>
+                                    </div>
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="type-of-pipe" id="gladkaya" value="gladkaya">
+                                        <label for="gladkaya">гладкая</label>
+                                    </div>
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="type-of-pipe" id="profilnaya" value="profilnaya">
+                                        <label for="profilnaya">профильная</label>
+                                    </div>
+                                    <div class="input-radio-box">
+                                        <input type="radio" name="type-of-pipe" id="riflenaya" value="riflenaya">
+                                        <label for="riflenaya">рифленая</label>
+                                    </div>
+                                    <!-- Добавьте еще опций -->
+                                    <div class="input-radio-box hidden-option">
+                                        <input type="radio" name="type-of-pipe" id="kombinirovannaya"
+                                            value="kombinirovannaya">
+                                        <label for="kombinirovannaya">комбинированная</label>
+                                    </div>
+                                    <div class="input-radio-box hidden-option">
+                                        <input type="radio" name="type-of-pipe" id="spiralnaya" value="spiralnaya">
+                                        <label for="spiralnaya">спиральная</label>
+                                    </div>
+                                </div>
+                                <button type="button" class=" input-radio-a" data-expanded="false">показать все</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="cart-products-right">
+                        <div class="minicatalog-popul-item">
+                            <a href="product.html" class="popul-item-img-box">
+                                <img src="assets/images/minicatalogPopul/image265.png" alt="minicatalog">
+                            </a>
+
+                            <div class="popul-desc-box">
+                                <p class="popul-price">245.50 ₽</p>
+                                <p class="popul-desc">Кронштейн 1-рядный белое золото 15см Ø16мм 033</p>
+                            </div>
+
+                        </div>
+                        <div class="minicatalog-popul-item">
+                            <a href="#" class="popul-item-img-box">
+                                <img src="assets/images/minicatalogPopul/image265-1.png" alt="minicatalog">
+                            </a>
+                            <div class="popul-desc-box">
+                                <p class="popul-price">245.50 ₽</p>
+                                <p class="popul-desc">Кронштейн 1-рядный белое золото 15см Ø16мм 033</p>
+                            </div>
+                        </div>
+                        <div class="minicatalog-popul-item">
+                            <a href="#" class="popul-item-img-box">
+                                <img src="assets/images/minicatalogPopul/image265-2.png" alt="minicatalog">
+                            </a>
+                            <div class="popul-desc-box">
+                                <p class="popul-price">245.50 ₽</p>
+                                <p class="popul-desc">Кронштейн 1-рядный белое золото 15см Ø16мм 033</p>
+                            </div>
+                        </div>
+                        <div class="minicatalog-popul-item">
+                            <a href="#" class="popul-item-img-box">
+                                <img src="assets/images/minicatalogPopul/image65-3.png" alt="minicatalog">
+                            </a>
+                            <div class="popul-desc-box">
+                                <p class="popul-price">245.50 ₽</p>
+                                <p class="popul-desc">Кронштейн 1-рядный белое золото 15см Ø16мм 033</p>
+                            </div>
+                        </div>
+                        <div class="minicatalog-popul-item">
+                            <a href="#" class="popul-item-img-box">
+                                <img src="assets/images/minicatalogPopul/image265-1.png" alt="minicatalog">
+                            </a>
+                            <div class="popul-desc-box">
+                                <p class="popul-price">245.50 ₽</p>
+                                <p class="popul-desc">Кронштейн 1-рядный белое золото 15см Ø16мм 033</p>
+                            </div>
+                        </div>
+                        <div class="minicatalog-popul-item">
+                            <a href="#" class="popul-item-img-box">
+                                <img src="assets/images/minicatalogPopul/image265-2.png" alt="minicatalog">
+                            </a>
+                            <div class="popul-desc-box">
+                                <p class="popul-price">245.50 ₽</p>
+                                <p class="popul-desc">Кронштейн 1-рядный белое золото 15см Ø16мм 033</p>
+                            </div>
+                        </div>
+                        <div class="minicatalog-popul-item">
+                            <a href="#" class="popul-item-img-box">
+                                <img src="assets/images/minicatalogPopul/image65-3.png" alt="minicatalog">
+                            </a>
+                            <div class="popul-desc-box">
+                                <p class="popul-price">245.50 ₽</p>
+                                <p class="popul-desc">Кронштейн 1-рядный белое золото 15см Ø16мм 033</p>
+                            </div>
+                        </div>
+                        <div class="minicatalog-popul-item">
+                            <a href="#" class="popul-item-img-box">
+                                <img src="assets/images/minicatalogPopul/image265-1.png" alt="minicatalog">
+                            </a>
+                            <div class="popul-desc-box">
+                                <p class="popul-price">245.50 ₽</p>
+                                <p class="popul-desc">Кронштейн 1-рядный белое золото 15см Ø16мм 033</p>
+                            </div>
+                        </div>
+                        <div class="minicatalog-popul-item">
+                            <a href="#" class="popul-item-img-box">
+                                <img src="assets/images/minicatalogPopul/image265.png" alt="minicatalog">
+                            </a>
+
+                            <div class="popul-desc-box">
+                                <p class="popul-price">245.50 ₽</p>
+                                <p class="popul-desc">Кронштейн 1-рядный белое золото 15см Ø16мм 033</p>
+                            </div>
+
+                        </div>
+                        <div class="minicatalog-popul-item">
+                            <a href="#" class="popul-item-img-box">
+                                <img src="assets/images/minicatalogPopul/image265-1.png" alt="minicatalog">
+                            </a>
+                            <div class="popul-desc-box">
+                                <p class="popul-price">245.50 ₽</p>
+                                <p class="popul-desc">Кронштейн 1-рядный белое золото 15см Ø16мм 033</p>
+                            </div>
+                        </div>
+                        <div class="minicatalog-popul-item">
+                            <a href="#" class="popul-item-img-box">
+                                <img src="assets/images/minicatalogPopul/image265-2.png" alt="minicatalog">
+                            </a>
+                            <div class="popul-desc-box">
+                                <p class="popul-price">245.50 ₽</p>
+                                <p class="popul-desc">Кронштейн 1-рядный белое золото 15см Ø16мм 033</p>
+                            </div>
+                        </div>
+                        <div class="minicatalog-popul-item">
+                            <a href="#" class="popul-item-img-box">
+                                <img src="assets/images/minicatalogPopul/image65-3.png" alt="minicatalog">
+                            </a>
+                            <div class="popul-desc-box">
+                                <p class="popul-price">245.50 ₽</p>
+                                <p class="popul-desc">Кронштейн 1-рядный белое золото 15см Ø16мм 033</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt100">
+        <div class="container">
+            <div class="footer-up">
+                <div class="footer-up-left">
+                    <div class="footer-contacts">
+                        <div class="footer-contacts-box">
+                            <a href="tel:+88432041970" class="footer-contacts-title">8 843 204-19-70</a>
+                            <p class="footer-box-desc">телефон для розницы</p>
+                        </div>
+                        <div class="footer-contacts-box">
+                            <a href="tel:+88432742368" class="footer-contacts-title">8 843 274-23-68</a>
+                            <p class="footer-box-desc">телефон для опта</p>
+                        </div>
+                        <div class="footer-contacts-box">
+                            <a href="mailto:sales@korall-ltd.ru" class="footer-contacts-title">sales@korall-ltd.ru</a>
+                            <p class="footer-box-desc">электронная почта</p>
+                        </div>
+                    </div>
+                    <div class="footer-navs">
+                        <div class="footer-nav-item">
+                            <p class="footer-nav-title">Компания</p>
+                            <nav class="footer-nav">
+                                <a href="#">о компании</a>
+                                <a href="#">наши магазины</a>
+                                <a href="#">отзывы</a>
+                                <a href="#">сотрудничество</a>
+                            </nav>
+                        </div>
+                        <div class="footer-nav-item">
+                            <p class="footer-nav-title">Каталог</p>
+                            <nav class="footer-nav">
+                                <a href="#">Жалюзи</a>
+                                <a href="#">Карнизы</a>
+                                <a href="#">Аксессуары</a>
+                                <a href="categ_catalog.html">Весь каталог</a>
+                            </nav>
+                        </div>
+                        <div class="footer-nav-item">
+                            <p class="footer-nav-title">Помощь</p>
+                            <nav class="footer-nav">
+                                <a href="#">Доставка</a>
+                                <a href="#">Оплата</a>
+                                <a href="#">Возврат</a>
+                                <a href="#">FAQ</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-links-box">
+                    <div class="contacts-images footer-images">
+                        <a href="#" class="contacts-img-box footer-img-box-w">
+                            <img src="assets/images/footer/Vector.svg" alt="contact">
+                        </a>
+                        <a href="#" class="contacts-img-box footer-img-box-w">
+                            <img src="assets/images/footer/Vector-1.svg" alt="contact">
+                        </a>
+                        <a href="#" class="contacts-img-box footer-img-box-w">
+                            <img src="assets/images/footer/Vector-2.svg" alt="contact">
+                        </a>
+                        <a href="#" class="contacts-img-box footer-img-box-w">
+                            <img src="assets/images/footer/Vector-3.svg" alt="contact">
+                        </a>
+                        <a href="#" class="contacts-img-box footer-link">
+                            Задать вопрос
+                        </a>
+                    </div>
+                    <p>Наши товары
+                        на маркетплейсах</p>
+                    <div class="about-links-images footer-links-images">
+                        <a href="#"> <img src="assets/images/about/1.svg" alt="brand"></a>
+                        <a href="#"> <img src="assets/images/about/2.svg" alt="brand"></a>
+                        <a href="#"> <img src="assets/images/about/3.svg" alt="brand"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="f-politic-box">
+                <p>© 2024 Официальный сайт StroySnab. Все права защищены</p>
+                <a href="#" download>Политика конфиденциальности</a>
+                <a href="#">Карта сайта</a>
+                <div class="f-politic-everytech">
+                    <p>Разработка и продвижение</p>
+                    <img src="assets/images/footer/Frame.svg" alt="Frame">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- //всегда в конце стр -->
+    <div class="user-overlay"></div>
+
+    <div class="user-drawer">
+        <div class="user-drawer-content">
+            <p class="Unbounded user-drawer-title">Создайте аккаунт</p>
+            <p class="user-drawer-desc">Для этого укажите только
+                электронную почту, мы отправим
+                на нее данные для входа</p>
+            <div class="user-drawer-tabs">
+                <p class="user-drawer-tab active Manrope">регистрация</p>
+                <p class="user-drawer-tab Manrope">авторизация</p>
+            </div>
+            <form class="user-drawer-form active">
+                <div class="form-gap">
+                    <label>
+                        электронная почта
+                    </label>
+                    <input type="email" placeholder="Ваша эл. почта" maxlength="40"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" class="validate-name">
+                    <div class="error-text"></div>
+                </div>
+                <div class="form-gap">
+                    <label class="form-gap-checkbox">
+                        <input type="checkbox" class="user-drawer-checkbox">
+                        <span class="custom-checkbox"></span>
+                        <span class="checkbox-text">Я партнёр</span>
+                    </label>
+
+                    <div class="error-text"></div>
+                </div>
+                <button class="header-btn btn-user-drawer  btn-user-CODE Manrope">Завершить регистрацию</button>
+                <p class="user-drawer-desc user-drawer-desc-reg">Нажимая кнопку «Зарегистрироваться», я подтверждаю, что
+                    ознакомился с
+                    Политикой конфиденциальности.</p>
+            </form>
+            <form class="user-drawer-form">
+                <div class="form-gap">
+                    <label>
+                        электронная почта
+                    </label>
+                    <input type="email" placeholder="Ваша эл. почта" maxlength="40"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" class="validate-name">
+                    <div class="error-text"></div>
+                </div>
+                <div class="form-gap">
+                    <label>
+                        пароль
+                    </label>
+                    <div class="password-wrapper">
+                        <input type="password" placeholder="••••••••" class="password-input password-main"
+                            maxlength="40">
+                        <button type="button" class="toggle-password" aria-label="Показать пароль">
+                            <img src="assets/images/form/eye.svg" alt="eye" class="eye-icon">
+                            <img src="assets/images/form/eye2.svg" alt="eye" class="eye-off-icon hidden">
+                        </button>
+                    </div>
+                    <div class="error-text"></div>
+                </div>
+                <button class="header-btn btn-user-drawer Manrope">Войти</button>
+                <a href="#" class="forget-btn">Забыли пароль?</a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

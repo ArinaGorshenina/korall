@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Коралл | Личный кабинет</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="assets/js/main.js" defer></script>
+    <meta name="description"
+        content="Коралл | Широкий выбор товаров для освещения и оформления окон. Представляем качественную продукцию из России, Китая, Германии, Австрии, Турции.">
+    <meta name="keywords"
+        content="Коралл | Широкий выбор товаров для освещения и оформления окон. Представляем качественную продукцию из России, Китая, Германии, Австрии, Турции.">
+    <link rel="shortcut icon" href="assets/images/header/logo.svg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- header -->
+     <header>
+        <div class="header-up">
+            <div class="header-up-left">
+                <div class="header-locations">
+                    <div class="header-locations-btn">
+                        <img src="assets/images/header/direct-right.svg" alt="arrow">
+                        <a href="#">Казань</a>
+                    </div>
+                    <div class="header-locations-content">
+                        <a href="#">Казань</a>
+                        <a href="#">Казань</a>
+                        <a href="#">Казань</a>
+                        <a href="#">Казань</a>
+                    </div>
+                </div>
+
+                <nav class="header-nav-up header-nav-up-desktop">
+                    <a href="#">о компании</a>
+                    <a href="#">наши магазины</a>
+                    <a href="#">отзывы</a>
+                    <a href="#">сотрудничество</a>
+                    <a href="#">новости</a>
+                </nav>
+            </div>
+            <div class="header-up-right">
+                <div class="header-link">
+                    <a href="tel:+" class="header-link-title">8 843 204-19-70</a>
+                    <p class="header-link-desc">розница</p>
+                </div>
+                <div class="header-link">
+                    <a href="tel:+" class="header-link-title">8 843 274-23-68</a>
+                    <p class="header-link-desc">опт</p>
+                </div>
+            </div>
+        </div>
+        <div class="header-down">
+            <div class="header-down-left">
+                <a href="index.html"> <img src="assets/images/header/logo.svg" alt="logo" class="logo"></a>
+                <a href="categ_catalog.html" class="header-btn">
+                    <img src="assets/images/header/menu.svg" alt="menu">
+                    <p>Каталог</p>
+                </a>
+                <div class="h-btn-search h-btn-search-desktop">
+                    <input type="text" placeholder="Поиск товара" maxlength="100">
+                    <button>Найти</button>
+                </div>
+                <nav class="header-nav-down header-nav-down-desktop">
+                    <a href="#">Жалюзи</a>
+                    <a href="#">Карнизы</a>
+                    <a href="#">Аксессуары для штор</a>
+                </nav>
+            </div>
+            <div class="header-down-right header-down-right-desktop">
+                <a href="cart.html"><img src="assets/images/header/bag-happy.svg" alt="cart"></a>
+                <a href="#"><img src="assets/images/header/Heart.svg" alt="heart"></a>
+                <a href="account.html" class="user-icon-gap"><img src="assets/images/header/User.svg" alt="user"><p>Алексей</p></a>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <button class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="mobile-menu">
+        <div class="mobile-menu-inner">
+
+            <nav class="header-nav-up header-nav-up-mobile">
+                <a href="#">о компании</a>
+                <a href="#">наши магазины</a>
+                <a href="#">отзывы</a>
+                <a href="#">сотрудничество</a>
+                <a href="#">новости</a>
+            </nav>
+            <div class="h-btn-search">
+                <input type="text" placeholder="Поиск товара" maxlength="100">
+                <button>Найти</button>
+            </div>
+            <nav class="header-nav-down">
+                <a href="#">Жалюзи</a>
+                <a href="#">Карнизы</a>
+                <a href="#">Аксессуары для штор</a>
+            </nav>
+            <div class="header-down-right">
+                <a href="#"><img src="assets/images/header/bag-happy.svg" alt="cart"></a>
+                <a href="#"><img src="assets/images/header/Heart.svg" alt="heart"></a>
+                            <a href="account.html" class="user-icon-gap"><img src="assets/images/header/User.svg" alt="user"><p>Алексей</p></a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="account">
+        <div class="container">
+            <div class="account-tabs">
+                <h1 class="account-tab active Unbounded">Личные данные</h1>
+                <h1 class="account-tab Unbounded">Мои заказы</h1>
+            </div>
+
+            <div class="account-content active account-content-form">
+                <form>
+                    <div class="form-gap">
+                        <label>
+                            Имя
+                        </label>
+                        <input type="text" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-яЁё\s\-]+" maxlength="40"
+                            title="Имя должно состоять из кириллицы/латиницы, возможен пробел и '-'"
+                            class="validate-name">
+                        <div class="error-text"></div>
+                    </div>
+                    <div class="form-gap">
+                        <label>
+                            Фамилия
+                        </label>
+                        <input type="text" placeholder="Ваша фамилия" pattern="[A-Za-zА-Яа-яЁё\s\-]+" maxlength="40"
+                            title="Фамилия должна состоять из кириллицы/латиницы, возможен пробел и '-'"
+                            class="validate-name">
+                        <div class="error-text"></div>
+                    </div>
+                    <div class="form-gap">
+                        <label>
+                            Отчество
+                        </label>
+                        <input type="text" placeholder="Ваше отчество" pattern="[A-Za-zА-Яа-яЁё\s\-]+" maxlength="40"
+                            title="Отчество должно состоять из кириллицы/латиницы, возможен пробел и '-'"
+                            class="validate-name">
+                        <div class="error-text"></div>
+                    </div>
+                    <div class="form-gap">
+                        <label>
+                            электронная почта
+                        </label>
+                        <input type="email" placeholder="Ваша эл. почта" maxlength="40"
+                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" class="validate-name">
+                        <div class="error-text"></div>
+                    </div>
+                    <div class="form-gap">
+                        <label>
+                            новый пароль
+                        </label>
+                        <div class="password-wrapper">
+                            <input type="password" placeholder="••••••••" class="password-input password-main"
+                                maxlength="40">
+                            <button type="button" class="toggle-password" aria-label="Показать пароль">
+                                <img src="assets/images/form/eye.svg" alt="eye" class="eye-icon">
+                                <img src="assets/images/form/eye2.svg" alt="eye" class="eye-off-icon hidden">
+                            </button>
+                        </div>
+                        <div class="error-text"></div>
+                    </div>
+                    <div class="form-gap">
+                        <label>
+                            Подтверждение нового пароля:
+                        </label>
+                        <div class="password-wrapper">
+                            <input type="password" placeholder="••••••••" class="password-input password-confirm"
+                                maxlength="40">
+                            <button type="button" class="toggle-password" aria-label="Показать пароль">
+                                <img src="assets/images/form/eye.svg" alt="eye" class="eye-icon">
+                                <img src="assets/images/form/eye2.svg" alt="eye" class="eye-off-icon hidden">
+                            </button>
+                        </div>
+                        <div class="error-text"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="account-content">
+                заказы
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="mt100">
+        <div class="container">
+            <div class="footer-up">
+                <div class="footer-up-left">
+                    <div class="footer-contacts">
+                        <div class="footer-contacts-box">
+                            <a href="tel:+88432041970" class="footer-contacts-title">8 843 204-19-70</a>
+                            <p class="footer-box-desc">телефон для розницы</p>
+                        </div>
+                        <div class="footer-contacts-box">
+                            <a href="tel:+88432742368" class="footer-contacts-title">8 843 274-23-68</a>
+                            <p class="footer-box-desc">телефон для опта</p>
+                        </div>
+                        <div class="footer-contacts-box">
+                            <a href="mailto:sales@korall-ltd.ru" class="footer-contacts-title">sales@korall-ltd.ru</a>
+                            <p class="footer-box-desc">электронная почта</p>
+                        </div>
+                    </div>
+                    <div class="footer-navs">
+                        <div class="footer-nav-item">
+                            <p class="footer-nav-title">Компания</p>
+                            <nav class="footer-nav">
+                                <a href="#">о компании</a>
+                                <a href="#">наши магазины</a>
+                                <a href="#">отзывы</a>
+                                <a href="#">сотрудничество</a>
+                            </nav>
+                        </div>
+                        <div class="footer-nav-item">
+                            <p class="footer-nav-title">Каталог</p>
+                            <nav class="footer-nav">
+                                <a href="#">Жалюзи</a>
+                                <a href="#">Карнизы</a>
+                                <a href="#">Аксессуары</a>
+                                <a href="categ_catalog.html">Весь каталог</a>
+                            </nav>
+                        </div>
+                        <div class="footer-nav-item">
+                            <p class="footer-nav-title">Помощь</p>
+                            <nav class="footer-nav">
+                                <a href="#">Доставка</a>
+                                <a href="#">Оплата</a>
+                                <a href="#">Возврат</a>
+                                <a href="#">FAQ</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-links-box">
+                    <div class="contacts-images footer-images">
+                        <a href="#" class="contacts-img-box footer-img-box-w">
+                            <img src="assets/images/footer/Vector.svg" alt="contact">
+                        </a>
+                        <a href="#" class="contacts-img-box footer-img-box-w">
+                            <img src="assets/images/footer/Vector-1.svg" alt="contact">
+                        </a>
+                        <a href="#" class="contacts-img-box footer-img-box-w">
+                            <img src="assets/images/footer/Vector-2.svg" alt="contact">
+                        </a>
+                        <a href="#" class="contacts-img-box footer-img-box-w">
+                            <img src="assets/images/footer/Vector-3.svg" alt="contact">
+                        </a>
+                        <a href="#" class="contacts-img-box footer-link">
+                            Задать вопрос
+                        </a>
+                    </div>
+                    <p>Наши товары
+                        на маркетплейсах</p>
+                    <div class="about-links-images footer-links-images">
+                        <a href="#"> <img src="assets/images/about/1.svg" alt="brand"></a>
+                        <a href="#"> <img src="assets/images/about/2.svg" alt="brand"></a>
+                        <a href="#"> <img src="assets/images/about/3.svg" alt="brand"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="f-politic-box">
+                <p>© 2024 Официальный сайт StroySnab. Все права защищены</p>
+                <a href="#" download>Политика конфиденциальности</a>
+                <a href="#">Карта сайта</a>
+                <div class="f-politic-everytech">
+                    <p>Разработка и продвижение</p>
+                    <img src="assets/images/footer/Frame.svg" alt="Frame">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+
+</html>
